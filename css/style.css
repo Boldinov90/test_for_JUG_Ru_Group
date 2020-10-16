@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.content {
+    margin-left: 84px;
+    margin-top: 149px;
+    max-width: 505px;
+    max-height: 582px;
+    display: grid;
+    grid-template-areas: "logo . "
+                         "title title"
+                         "p-text p-text"
+                         "btns btns";
+}
+
+.content__logo {
+    grid-area: logo;
+    width: 126px;
+    height: 41px;
+    margin-bottom: 60px;
+}
+
+.content__title {
+    grid-area: title;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.content__text {
+    grid-area: p-text;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+}
+.content__text p{
+    margin-top: 10px;
+}
+
+.content__buttons{
+    grid-area: btns;
+    display: flex;
+    margin-top: 48px;
+}
+
+.content__btn{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.man-icon {
+    height: 52px;
+    width: 52px;
+    margin-bottom: -3px;
+    z-index: 1;
+}
+
+.btn-by {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 65px;
+    background: #FBCB03;
+    border-radius: 12px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+    margin-right: 10.5px;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;   
+    -khtml-user-select: none;    
+    -moz-user-select: none;      
+    -ms-user-select: none;       
+    user-select: none;  
+}
+.btn-by:hover{
+    transition: 0.5s;
+    background-color: #E6B901;
+}
+.btn-goToTheAss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 65px;
+    background: #000000;
+    border-radius: 12px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-left: 10.5px;    
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;   
+    -khtml-user-select: none;    
+    -moz-user-select: none;      
+    -ms-user-select: none;       
+    user-select: none;  
+}
+.btn-goToTheAss:hover{
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.8);;
+}
+.images {
+    height: 100%;
+}
+.lines {
+    width: 1489px; 
+    height: 837,56px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.surface {
+    position: absolute;
+    width: 714px;
+    height: 611px;
+    right: 0;
+    top: 187px;
+}
+
+
+.hidden{
+    display: none;
+}
+.form__overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.664);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;   
+    -khtml-user-select: none;    
+    -moz-user-select: none;      
+    -ms-user-select: none;       
+    user-select: none;  
+}
+.formNotBy__body{
+    position: relative;
+    width: 610px;
+    height: 498px;
+    border-radius: 20px;
+    background-color: black;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-left: 22px;
+}
+
+.formNotBy__body-title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 130%;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    margin-top: 38px;
+}
+.formNotBy__body-title img{
+    margin-right: 20px;
+    height: 60px;
+    width: 60px;
+}
+.formNotBy__buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+.btn-in-form{
+    border: 1px solid #FFFFFF;
+    background-color: rgba(0, 0, 0, 0);
+    width: 441px;
+    height: 50px;
+    border-radius: 45px;
+    margin-bottom: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
+    transition: 0.5s;
+    outline: none;
+}
+.btn-in-form:hover{
+    transition: 0.5s;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.good{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 255px;
+    top: 159px;
+}
+.formNotBy-notification-text{
+    position: absolute;
+    left: 116px;
+    top: 279px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1350px){
+    .lines {
+        width: 1289px; 
+        height: 637,56px;
+    }
+    .surface {
+        width: 614px;
+        height: 511px;
+        top: 280px;
+    }
+}
+@media (max-width: 1200px){
+    .lines {
+        width: 1089px; 
+        height: 437,56px;
+    }
+    .surface {
+        width: 514px;
+        height: 411px;
+    }
+}
+@media (max-width: 1080px){
+    .content__logo {
+        margin-bottom: 0;
+    }
+    .content{
+        max-width: 405px;
+        max-height: 482px;
+        margin-top: 400px;
+    }
+    .content__title{
+        font-size: 37px;
+    }
+    .content__text {
+
+        font-size: 14px;
+        line-height: 150%;
+    }
+    .content__buttons{
+        margin-top: 0;
+    }
+    .surface {
+        top: 187px;
+    }
+}
+@media (max-width: 700px){
+    .content{
+        max-width: 305px;
+        max-height: 382px;
+        margin-top: 400px;
+        margin-left: 24px;
+    }
+    .content__title{
+        font-size: 37px;
+        margin-top: 20px;
+    }
+    .content__text {
+        font-size: 12px;
+        line-height: 150%;
+    }
+    .content__buttons{
+        margin-top: 30px;
+    }
+    .btn-by {
+        width: 190px;
+        height: 65px;
+        font-size: 18px;
+        margin-left: 10.5px;    
+    }
+    .btn-goToTheAss {
+        width: 190px;
+        height: 65px;
+        font-size: 18px;
+        margin-right: 10.5px;    
+    }
+    .lines {
+        width: 889px; 
+        height: 237,56px;
+    }
+    .surface {
+        top: 187px;
+        width: 414px;
+        height: 311px;
+    }
+}
+@media (max-width: 500px){
+    .formNotBy__body-title{
+        font-size: 20px;
+    }
+    .formNotBy__body-title img{
+        margin-right: 20px;
+        height: 40px;
+        width: 40px;
+    }
+    .formNotBy__body{
+        width: 610px;
+        height: 458px;
+    }
+    .formNotBy__buttons{
+        margin-top: 50px;
+    }
+    .formNotBy__buttons button{
+        width: 241px;
+        height: 40px;
+        border-radius: 45px;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .content{
+        max-width: 290px;
+        max-height: 382px;
+        margin-top: 250px;
+        margin-left: 15px;
+    }
+    .content__title{
+        font-size: 32px;
+    }
+    .content__text {
+        font-size: 12px;
+    }
+
+    .btn-by {
+        width: 130px;
+        height: 40px;
+        font-size: 12px;
+        margin-left: 3px;  
+        border-radius: 6px;  
+    }
+    .btn-goToTheAss {
+        width: 130px;
+        height: 40px;
+        font-size: 12px;
+        margin-right: 3px;  
+        border-radius: 6px;  
+    }
+    .lines {
+        width: 480px; 
+        height: 50,56px;
+    }
+    .surface {
+        top: 73px;
+        width: 264px;
+        height: 241px;
+    }
+    .man-icon{
+        height: 32px;
+        width: 32px;
+    }
+    .content__logo {
+        width: 116px;
+        height: 31px;
+    }
+    .good{
+        left: 50%;
+        transform: translateX(-50%);
+        top: 59px;
+    }
+    .formNotBy-notification-text{
+        left: 20px;
+        right: 20px;
+        font-size: 18px;
+    }
+}
